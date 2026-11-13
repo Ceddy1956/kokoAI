@@ -1,4 +1,10 @@
 # kokoAI
-a interactive grief bot that helps you go in your day to day bases 
+## License & Attributions
 
-"The Koko character, Ember & Moss Sanctuary design, procedural artwork, audio engine, and application code are dedicated to the Public Domain (CC0 1.0 Universal). Embedded third-party research datasets (ESConv, EmpatheticDialogues, and EMNLP DailyDialog) remain subject to their respective academic licenses and attributions."
+The **Ember & Moss Sanctuary** application code, procedural 2D artwork, Web Audio synthesizer, and the **Koko** character are dedicated to the public domain under **CC0 1.0 Universal** (see `LICENSE`).
+
+### Third-Party Academic Datasets
+This project includes locally embedded retrieval examples from the following research datasets, which remain subject to their respective academic licenses:
+* **ESConv (Emotional Support Conversation):** Liu et al. (2021), *"Towards Emotional Support Dialog Systems"*, ACL. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+* **EmpatheticDialogues:** Rashkin et al. (2019), *"Towards Empathetic Open-domain Conversation Models"*, ACL.
+* **DailyDialog:** Li et al. (2017), *"DailyDialog: A Manually Labelled Multi-turn Dialogue Dataset"*, IJCNLP
