@@ -57,6 +57,104 @@ Dynamic Prompt Injection: Upgraded the chooseGentleQuestion logic to actively we
 
 Offline Data Compression: Embedded the EMNLP core dataset array and Base64 GZIP EmpatheticDialogues strings directly into the source file, eliminating external network dependencies for baseline emotional reasoning.
 
+oko 2.5 introduces improvements to conversational context, memory, emotional continuity, and response handling. This update focuses on making Koko better at following ongoing conversations, remembering relevant details, and maintaining a more natural, consistent companion experience.
+
+What's New
+
+1. Advanced Context Understanding
+
+Improved recognition of references such as "it," "that," "they," and "again."
+
+Uses up to eight recent conversation turns to help interpret follow-up messages.
+
+Introduces confidence-based reference resolution.
+
+Adds a lightweight knowledge graph to connect remembered entities and topics.
+
+2. Long-Term Conversational Memory
+
+Introduces optional, device-local memory.
+
+Can save general details such as preferences, interests, studies, projects, and goals.
+
+Allows users to review or clear saved details.
+
+Stores up to 12 conversational notes.
+
+3. Emotional Continuity
+
+Tracks recent emotional signals across conversations.
+
+Detects possible emotional changes, including lighter, heavier, or shifting emotional states.
+
+Uses emotional context to support conversational continuity.
+
+4. Natural Conversation Improvements
+
+Improves response variation and repetition management.
+
+Maintains the one-question-at-a-time approach.
+
+Includes adaptive response pacing.
+
+Improves conversational flow and acknowledgement handling.
+
+5. Multi-Topic Conversation Manager
+
+Supports multiple active conversation topics.
+
+Detects topic changes and helps maintain previous topic context.
+
+Connects conversation topics with the lightweight knowledge graph.
+
+Integrates MultiWOZ-based dialogue-state tracking.
+
+6. Intent Recognition
+
+Identifies conversational intentions such as listening, advice, information, humor, companionship, and needing space.
+
+Uses detected intent to help guide response selection.
+
+Prioritizes crisis-related safety handling.
+
+7. Response Quality Evaluation
+
+Evaluates responses for repetition, excessive length, multiple questions, invalidating language, topic drift, and persona consistency.
+
+Applies quality scoring to candidate responses.
+
+8. Automated Self-Testing
+
+Includes 307 deterministic logic checks.
+
+Tests reference resolution, multi-topic conversations, intent recognition, and response quality.
+
+Runs automatically when the page loads.
+
+Technical Notes
+
+Built with HTML, CSS, and JavaScript.
+
+Uses rule-based conversational logic and integrated dialogue datasets.
+
+Includes a compact, schema-derived MultiWOZ 2.2 ontology for dialogue-state tracking.
+
+Local memory uses browser storage and is optional.
+
+No external AI model is required for the built-in conversational systems.
+
+Known Limitations
+
+Koko is not a general-purpose large language model.
+
+Context interpretation and emotional tracking rely on heuristic and rule-based logic.
+
+Reference resolution may not always identify the user's intended meaning.
+
+Local memory is limited to the current browser/device environment.
+
+Automated self-tests do not guarantee performance in every real-world conversation
+
 Dataset Credits & Acknowledgements
 
 Koko's emotional reasoning and conversational routing are powered by several open-source academic datasets. The architecture utilizes these corpora to advance empathetic AI and structural active listening:
